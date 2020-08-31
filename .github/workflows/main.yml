@@ -10,4 +10,5 @@ jobs:
 
     steps: # Each action/command to run
     - uses: actions/checkout@v1 # Helps check out the repo code
+    - run: npm install node-fetch --save
     - uses: ./.github/actions/test-action # Tell it to run out JS Action
