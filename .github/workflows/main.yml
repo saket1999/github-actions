@@ -12,3 +12,4 @@ jobs:
     - uses: actions/checkout@v1 # Helps check out the repo code
     - run: npm install node-fetch --save
     - uses: ./.github/actions/test-action # Tell it to run out JS Action
+    - run: pwd
