@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 console.log('Hello World!')
 
 fetch('https://clist.by:443/api/v1/contest/?limit=1000&end__gt=2020-08-08T03%3A07%3A43', {
