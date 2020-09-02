@@ -26,7 +26,7 @@ async function getJSON() {
 		);
 	const json = await response.json();
 	console.log(json);
-	fs.writeFile("test.json", JSON.stringify(json), function(err) {
+	fs.writeFile("data.json", JSON.stringify(json), function(err) {
 	    if (err) {
 	        console.log(err);
 	    }
