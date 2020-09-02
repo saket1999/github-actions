@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest # Environment job will run in
 
     steps: # Each action/command to run
-    - uses: actions/checkout@v1 # Helps check out the repo code
+    - uses: actions/checkout@v2 # Helps check out the repo code
     - run: npm install node-fetch --save
     - uses: ./.github/actions/test-action # Tell it to run out JS Action
     - run: pwd
