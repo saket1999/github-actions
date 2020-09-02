@@ -16,5 +16,6 @@ jobs:
       run: |
         git config --global user.name 'Saket Kumar'
         git config --global user.email 'saket1999@users.noreply.github.com'
+        git add data.json
         git commit -am "Updating new data"
         git push
