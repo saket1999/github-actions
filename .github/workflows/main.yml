@@ -1,7 +1,8 @@
-name: CI # Name of our workflow
+name: Update Data # Name of our workflow
 
 on: 
-  workflow_dispatch:
+  schedule:
+  - cron: "0 * * * *"
 
 jobs:
   build:
