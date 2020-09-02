@@ -26,11 +26,11 @@ async function getJSON() {
 		);
 	const json = await response.json();
 	console.log(json);
-	// fs.writeFile("test.json", JSON.stringify(json), function(err) {
-	//     if (err) {
-	//         console.log(err);
-	//     }
-	// });
+	fs.writeFile("test.json", JSON.stringify(json), function(err) {
+	    if (err) {
+	        console.log(err);
+	    }
+	});
 }
 
 getJSON();
