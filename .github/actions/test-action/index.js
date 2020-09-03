@@ -2,7 +2,9 @@ const fetch = require('node-fetch');
 var fs = require('fs');
 
 var d = new Date();
+d.setDate(d.getDate()-5);
 var n = d.toISOString();
+console.log(n);
 
 async function getJSON() {
 	const response = await fetch('https://clist.by:443/api/v1/contest/?limit=1000&end__gt=' + n, 
@@ -15,7 +17,6 @@ async function getJSON() {
 		}
 		);
 	const json = await response.json();
-	console.log(json);
 	fs.writeFile("data.json", JSON.stringify(json), function(err) {
 	    if (err) {
 	        console.log(err);
